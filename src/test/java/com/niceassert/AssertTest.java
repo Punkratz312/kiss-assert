@@ -8,31 +8,31 @@ import org.junit.Test;
 /**
  * @author <a href="mailto:vincent.potucek@1und1.de">Vincent Potucek</a>
  */
-public class NiceAssertTest {
+public class AssertTest {
 
     @Test(expected = IllegalArgumentException.class)
     public void notNull() throws Exception {
-        NiceAssert.notNull(null);
+        Assert.notNull(null);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void notEmpty_null() throws Exception {
         String s = null;
-        NiceAssert.notEmpty(s);
+        Assert.notEmpty(s);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void notEmpty_string() throws Exception {
-        NiceAssert.notEmpty("");
+        Assert.notEmpty("");
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void notEmpty_collection() throws Exception {
-        NiceAssert.notEmpty(emptyList());
+        Assert.notEmpty(emptyList());
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void notEmpty_iterator() throws Exception {
-        NiceAssert.notEmpty(emptyIterator());
+        Assert.notEmpty(emptyIterator());
     }
 }

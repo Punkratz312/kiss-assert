@@ -9,7 +9,7 @@ import lombok.experimental.UtilityClass;
 import org.apache.commons.collections4.CollectionUtils;
 
 @UtilityClass
-public class NiceAssert {
+public class Assert {
 
     public static void notNull(Object o) {
         check(o == null, "Object", "not null");
