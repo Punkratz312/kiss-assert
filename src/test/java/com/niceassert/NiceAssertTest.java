@@ -1,5 +1,6 @@
 package com.niceassert;
 
+import static java.util.Collections.emptyIterator;
 import static java.util.Collections.emptyList;
 
 import org.junit.Test;
@@ -28,5 +29,10 @@ public class NiceAssertTest {
     @Test(expected = IllegalArgumentException.class)
     public void notEmpty_collection() throws Exception {
         NiceAssert.notEmpty(emptyList());
+    }
+
+    @Test(expected = IllegalArgumentException.class)
+    public void notEmpty_iterator() throws Exception {
+        NiceAssert.notEmpty(emptyIterator());
     }
 }
