@@ -1,1 +1,1 @@
-# kissa-ssert
+# kiss-assert
