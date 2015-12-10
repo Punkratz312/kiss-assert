@@ -32,6 +32,7 @@ public class Assert {
 
     private static void check(boolean failureCondition, String subject, String reason) {
         if (failureCondition) {
+            // TODO enable exception type configuration
             throw new IllegalArgumentException("Expected " + subject + " not to be " + reason);
         }
     }
