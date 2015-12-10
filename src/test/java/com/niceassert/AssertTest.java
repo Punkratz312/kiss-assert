@@ -16,12 +16,6 @@ public class AssertTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
-    public void notEmpty_null() throws Exception {
-        String s = null;
-        Assert.notEmpty(s);
-    }
-
-    @Test(expected = IllegalArgumentException.class)
     public void notEmpty_string() throws Exception {
         Assert.notEmpty("");
     }

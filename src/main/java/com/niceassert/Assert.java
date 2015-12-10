@@ -24,7 +24,7 @@ public class Assert {
     }
 
     public static void notEmpty(Iterator<?> iterator) {
-        check(!iterator.hasNext(), "Iterator", "empty");
+        check(iterator == null || !iterator.hasNext(), "Iterator", "empty");
     }
 
     private static void check(boolean failureCondition, String subject, String reason) {
