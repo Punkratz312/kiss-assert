@@ -10,6 +10,12 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+    <scm>
+        <url>https://github.com/Punkratz312/kiss-assert</url>
+        <connection>scm:git:git@github.com:Punkratz312/kiss-assert.git</connection>
+        <developerConnection>scm:git:git@github.com:Punkratz312/kiss-assert.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
     <licenses>
         <license>
             <name>The Apache Software License, Version 2.0</name>
