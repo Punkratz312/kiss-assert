@@ -8,6 +8,9 @@ import java.util.Iterator;
 
 import lombok.experimental.UtilityClass;
 
+/**
+ * @author <a href="mailto:vincent@potucek.com">Vincent Potucek</a>
+ */
 @UtilityClass
 public class Assert {
 

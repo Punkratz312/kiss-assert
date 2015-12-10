@@ -6,7 +6,7 @@ import static java.util.Collections.emptyList;
 import org.junit.Test;
 
 /**
- * @author <a href="mailto:vincent.potucek@1und1.de">Vincent Potucek</a>
+ * @author <a href="mailto:vincent@potucek.com">Vincent Potucek</a>
  */
 public class AssertTest {
 
