@@ -33,6 +33,9 @@
                         <targetTests>
                             <param>com.kissassert*</param>
                         </targetTests>
+                        <mutators>
+                            <mutator>ALL</mutator>
+                        </mutators>
                     </configuration>
                 </plugin>
             </plugins>
