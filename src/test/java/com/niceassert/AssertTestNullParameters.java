@@ -1,4 +1,4 @@
-package com.niceassert;
+package com.kissassert;
 
 import static java.util.Arrays.asList;
 import static java.util.stream.Collectors.toList;

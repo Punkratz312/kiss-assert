@@ -1,4 +1,4 @@
-package com.niceassert;
+package com.kissassert;
 
 import static java.util.Collections.emptyIterator;
 import static java.util.Collections.emptyList;
