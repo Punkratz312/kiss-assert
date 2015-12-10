@@ -1,30 +1,30 @@
 package com.niceassert;
 
+import static org.apache.commons.collections4.CollectionUtils.isEmpty;
 import static org.apache.commons.lang3.StringUtils.isBlank;
 
 import java.util.Collection;
 import java.util.Iterator;
 
 import lombok.experimental.UtilityClass;
-import org.apache.commons.collections4.CollectionUtils;
 
 @UtilityClass
 public class Assert {
 
     public static void notNull(Object o) {
-        check(o == null, "Object", "not null");
+        check(o == null, "Object", "null");
     }
 
     public static void notEmpty(String s) {
-        check(isBlank(s), "String to be not empty", "empty");
+        check(isBlank(s), "String", "empty");
     }
 
     public static void notEmpty(Collection<?> collection) {
-        check(CollectionUtils.isEmpty(collection), "Collection", "empty");
+        check(isEmpty(collection), "Collection", "empty");
     }
 
     public static void notEmpty(Iterator<?> iterator) {
-        check(!iterator.hasNext(), "Collection", "empty");
+        check(!iterator.hasNext(), "Iterator", "empty");
     }
 
     private static void check(boolean failureCondition, String subject, String reason) {
