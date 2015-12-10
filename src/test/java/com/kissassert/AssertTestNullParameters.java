@@ -33,6 +33,11 @@ public class AssertTestNullParameters {
     }
 
     @Test
+    public void assertProvedMethodCount() throws Exception {
+        assertThat(methods().size()).isGreaterThan(5);
+    }
+
+    @Test
     public void handelNull() throws Exception {
         Object[] args;
         String expectedErrorMessage;
