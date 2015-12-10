@@ -37,9 +37,8 @@ public class AssertTestNullParameters {
             method.invoke(null, new Object[] { null });
             shouldHaveThrown(InvocationTargetException.class);
         } catch (InvocationTargetException ex) {
-            assertThat(ex).hasCauseInstanceOf(IllegalArgumentException.class);
-            assertThat(ex.getTargetException()).hasMessageContaining("Expected")
-                                               .hasMessageContaining("not to be");
+            assertThat(ex.getTargetException()).isExactlyInstanceOf(IllegalArgumentException.class)
+                                               .hasMessageMatching("Expected \\w+ not to be \\w+");
         }
     }
 }
