@@ -15,19 +15,35 @@ import lombok.experimental.UtilityClass;
 public class Assert {
 
     public static void notNull(Object o) {
-        check(o == null, "Object", "null");
+        notNull(o, "Object");
+    }
+
+    public static void notNull(Object o, String subject) {
+        check(o == null, subject, "null");
     }
 
     public static void notEmpty(String s) {
-        check(isBlank(s), "String", "empty");
+        notEmpty(s, "String");
+    }
+
+    public static void notEmpty(String s, String subject) {
+        check(isBlank(s), subject, "empty");
     }
 
     public static void notEmpty(Collection<?> collection) {
-        check(isEmpty(collection), "Collection", "empty");
+        notEmpty(collection, "Collection");
+    }
+
+    public static void notEmpty(Collection<?> collection, String subject) {
+        check(isEmpty(collection), subject, "empty");
     }
 
     public static void notEmpty(Iterator<?> iterator) {
-        check(iterator == null || !iterator.hasNext(), "Iterator", "empty");
+        notEmpty(iterator, "Iterator");
+    }
+
+    public static void notEmpty(Iterator<?> iterator, String subject) {
+        check(iterator == null || !iterator.hasNext(), subject, "empty");
     }
 
     private static void check(boolean failureCondition, String subject, String reason) {
