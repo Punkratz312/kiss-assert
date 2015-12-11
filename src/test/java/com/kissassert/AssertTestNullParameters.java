@@ -54,7 +54,7 @@ public class AssertTestNullParameters {
                 break;
             }
             default:
-                throw new RuntimeException("Not allwoed");
+                throw new RuntimeException("Not allowed");
         }
         try {
             method.invoke(null, args);
