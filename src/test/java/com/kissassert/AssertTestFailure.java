@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * @author <a href="mailto:vincent@potucek.com">Vincent Potucek</a>
  */
-public class AssertTest {
+public class AssertTestFailure {
 
     @Test(expected = IllegalArgumentException.class)
     public void notTrue() throws Exception {
