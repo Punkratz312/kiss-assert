@@ -1,4 +1,4 @@
-kiss-assert [![Build Status](https://travis-ci.org/punkratz312/kiss-assert.svg?branch=master)](https://travis-ci.org/punkratz312/kiss-assert)
+kiss-assert [![Build Status](https://travis-ci.org/punkratz312/kiss-assert.svg?branch=master)](https://travis-ci.org/punkratz312/kiss-assert) [![Coverage Status](https://coveralls.io/repos/punkratz312/kiss-assert/badge.svg?branch=master&service=github)](https://coveralls.io/github/punkratz312/kiss-assert?branch=master)
 =====================================
 Simple stupid assertion framework for java.
 
