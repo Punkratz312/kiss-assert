@@ -4,7 +4,7 @@ Simple stupid assertion framework for java.
 
 ### Example usage
 ```java
-puvlic void order(Customer customer) {
+public void order(Customer customer) {
 	Assert.notNull (customer);
 	Assert.notBlank(customer.getId());
 	Assert.notBlank(customer.getToken());
