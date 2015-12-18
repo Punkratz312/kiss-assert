@@ -31,6 +31,11 @@ public class AssertTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
+    public void notBlank() throws Exception {
+        Assert.notBlank(" ");
+    }
+
+    @Test(expected = IllegalArgumentException.class)
     public void notEmpty_collection() throws Exception {
         Assert.notEmpty(emptyList());
     }

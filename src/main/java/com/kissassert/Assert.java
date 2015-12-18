@@ -38,6 +38,14 @@ public class Assert {
         check(isBlank(s), subject, "empty");
     }
 
+    public static void notBlank(String s) {
+        notBlank(s, "blank");
+    }
+
+    public static void notBlank(String s, String subject) {
+        check(isBlank(s), subject, "blank");
+    }
+
     public static void notEmpty(Collection<?> collection) {
         notEmpty(collection, "Collection");
     }
