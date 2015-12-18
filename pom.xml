@@ -6,6 +6,7 @@
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>kiss-assert</name>
+    <description>simple and stupid assertion framework</description>
     <url>https://github.com/Punkratz312/kiss-assert</url>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
