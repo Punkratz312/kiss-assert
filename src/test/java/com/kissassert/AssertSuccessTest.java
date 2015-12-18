@@ -8,7 +8,7 @@ import org.junit.Test;
 /**
  * @author <a href="mailto:vincent@potucek.com">Vincent Potucek</a>
  */
-public class AssertTestSuccess {
+public class AssertSuccessTest {
 
     @Test
     public void notTrue() throws Exception {

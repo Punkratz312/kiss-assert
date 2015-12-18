@@ -11,7 +11,7 @@ import org.junit.rules.ExpectedException;
 /**
  * @author <a href="mailto:vincent@potucek.com">Vincent Potucek</a>
  */
-public class AssertTestFailure {
+public class AssertFailureTest {
 
     @Rule
     public ExpectedException expectedException = ExpectedException.none();

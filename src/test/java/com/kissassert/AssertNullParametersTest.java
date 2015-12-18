@@ -19,7 +19,7 @@ import org.junit.runners.Parameterized;
  * @author <a href="mailto:vincent@potucek.com">Vincent Potucek</a>
  */
 @RunWith(Parameterized.class)
-public class AssertTestNullParameters {
+public class AssertNullParametersTest {
 
     @Parameterized.Parameter
     public Method method;
