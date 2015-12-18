@@ -14,6 +14,10 @@ import lombok.experimental.UtilityClass;
 @UtilityClass
 public class Assert {
 
+    public static void notTrue(Boolean isTrue) {
+        check(isTrue == null || isTrue, "Condition", "true");
+    }
+
     public static void notNull(Object o) {
         notNull(o, "Object");
     }

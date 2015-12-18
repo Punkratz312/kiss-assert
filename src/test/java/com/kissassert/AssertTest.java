@@ -11,6 +11,11 @@ import org.junit.Test;
 public class AssertTest {
 
     @Test(expected = IllegalArgumentException.class)
+    public void notTrue() throws Exception {
+        Assert.notTrue(true);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
     public void notNull() throws Exception {
         Assert.notNull(null);
     }
