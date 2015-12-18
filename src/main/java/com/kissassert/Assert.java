@@ -39,7 +39,7 @@ public class Assert {
     }
 
     public static void notBlank(String s) {
-        notBlank(s, "blank");
+        notBlank(s, "String");
     }
 
     public static void notBlank(String s, String subject) {
