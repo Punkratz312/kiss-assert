@@ -18,6 +18,10 @@ public class Assert {
         check(isTrue == null || isTrue, "Condition", "true");
     }
 
+    public static void notFalse(Boolean isFalse) {
+        check(isFalse == null || !isFalse, "Condition", "false");
+    }
+
     public static void notNull(Object o) {
         notNull(o, "Object");
     }

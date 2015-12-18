@@ -16,6 +16,11 @@ public class AssertTest {
     }
 
     @Test(expected = IllegalArgumentException.class)
+    public void notFalse() throws Exception {
+        Assert.notFalse(false);
+    }
+
+    @Test(expected = IllegalArgumentException.class)
     public void notNull() throws Exception {
         Assert.notNull(null);
     }
